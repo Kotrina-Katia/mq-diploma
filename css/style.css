@@ -22,7 +22,7 @@
     display: block;
     width: 1660px;
     height: 3207px;
-    background-image: url(/NOEMI_mq_desktop.psd);
+    background-image: url(NOEMI_mq_desktop.psd);
     position: absolute;
     top: 0;
     left: calc(50% - 830px);
@@ -35,7 +35,7 @@
     padding-bottom: 135px;
   
     position: relative;
-    background-image: url(/images/banner-bg.jpg);
+    background-image: url(/mq-diploma/images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
