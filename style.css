@@ -30,6 +30,18 @@
     z-index: 1;
   }
 
+  .header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
   .menu {
     display: flex;
     align-items: center;
@@ -56,18 +68,6 @@
 
   .menu-lists {
     display: flex;
-  }
-
-  .header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000000;
-    opacity: 0.6;
-    z-index: -1;
   }
 
   .welcome-title {
@@ -139,15 +139,15 @@
   }
 
   .trend-second {
-    background-image: url(images/trend2.jpg);
+    background-image: url("images/trend2.jpg");
   }
 
   .trend-third {
-    background-image: url(images/trend3.jpg);
+    background-image: url("images/trend3.jpg");
   }
 
   .trend-fourth {
-    background-image: url(images/trend4.jpg);
+    background-image: url("images/trend4.jpg");
   }
 
   .trend-article {
@@ -188,6 +188,8 @@
   @media (min-width: 1200px) {
 
     .header {
+      width: 100%;
+      max-width: 1200px;
       padding-top: 30px;
       padding-bottom: 135px;
       
@@ -215,6 +217,8 @@
     }
 
     .trends {
+      width: 100%;
+      max-width: 1200px;
       padding-top: 65px;
     }
 
@@ -228,12 +232,12 @@
 
     .trend {
       width: calc((100%-15px)/4);
+      max-width: 410px;
       padding: 150px 20px 15px;
     }
 
     .trend-article {
       padding: 35px 30px;
-      
     }
     
     .trend-button-item {
