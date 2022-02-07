@@ -81,6 +81,8 @@
 
   .trends {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .trends-title {
@@ -106,6 +108,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-grow: 1;
   }
   
   .trend {
@@ -117,6 +120,18 @@
     background-size: cover;
     background-color: #000000;
     z-index: 1;
+  }
+
+  .trend::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
   }
 
   .trend-first {
@@ -140,9 +155,10 @@
     vertical-align: bottom;
   }
 
-  .trend-buttons {
+  .trend-button-list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .trend-button-item {
@@ -164,7 +180,7 @@
     text-decoration: none;
     font-size: 20px;
     line-height: 1.2;
-    color: #000000;
+    color: #ffffff;
   }
 
 
@@ -199,8 +215,6 @@
     }
 
     .trends {
-      display: flex;
-      flex-direction: column;
       padding-top: 65px;
     }
 
