@@ -228,11 +228,12 @@
 
     .trend {
       width: calc((100%-15px)/4);
+      padding: 150px 20px 15px;
     }
 
     .trend-article {
       padding: 35px 30px;
-      margin: 150px 20px 15px;
+      
     }
     
     .trend-button-item {
