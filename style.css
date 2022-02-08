@@ -110,13 +110,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    
     flex-grow: 1;
   }
   
   .trend {
     position: relative;
-    display: flex;
     text-align: left;
 
     background-repeat: no-repeat;
