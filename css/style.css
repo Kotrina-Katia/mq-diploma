@@ -49,8 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+   
   }
  
   .header-menu {
@@ -109,7 +108,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
   }
   
   .trend {
@@ -138,19 +136,19 @@
   }
 
   .trend-first {
-    background-image: url("images/trend1.jpg");
+    background-image: url("/mq-diploma/images/trend1.jpg");
   }
 
   .trend-second {
-    background-image: url("images/trend2.jpg");
+    background-image: url("/mq-diploma/images/trend2.jpg");
   }
 
   .trend-third {
-    background-image: url("images/trend3.jpg");
+    background-image: url("/mq-diploma/images/trend3.jpg");
   }
 
   .trend-fourth {
-    background-image: url("images/trend4.jpg");
+    background-image: url("/mq-diploma/images/trend4.jpg");
   }
 
   .trend-article {
@@ -311,7 +309,7 @@
     border: none;
   
     background-color: #b59f5b;
-    background-image: url(images/search.svg);
+    background-image: url("/mq-diploma/images/search.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
@@ -390,7 +388,7 @@
       max-width: 1660px;
       padding-top: 30px;
       padding-bottom: 135px;
-      background-image: url(images/banner-bg.jpg);
+      background-image: url("/mq-diploma/images/banner-bg.jpg");
     }
     
     .menu {
