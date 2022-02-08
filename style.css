@@ -57,7 +57,6 @@
     display: flex;
   }
 
-
   .menu-link {
     color: #ffffff;
     text-decoration: none;
@@ -117,6 +116,7 @@
   
   .trend {
     position: relative;
+    display: flex;
     text-align: left;
 
     background-repeat: no-repeat;
@@ -161,12 +161,12 @@
 
   .trend-button-list {
     display: flex;
-    
     justify-content: flex-start;
   }
 
   .trend-button-item {
     list-style-type: none;
+    justify-content: flex-start;
   }
 
   .trend-button-link {
