@@ -20,9 +20,8 @@
   }
   
 
-
-
   .header  {
+    width: 100%;
     text-align: center;
     position: relative;
     background-repeat: no-repeat;
@@ -30,7 +29,6 @@
     background-size: cover;
     background-color: #000000;
     z-index: 1;
-    
   }
 
   .header::after {
@@ -49,7 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
   }
  
   .header-menu {
@@ -111,11 +108,11 @@
   }
   
   .trend {
+    height: 320px;
     position: relative;
     display: flex;
     align-items: flex-end;
-    height: 320px;
-
+    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -155,18 +152,16 @@
     display: flex;
     flex-direction: column;
     border: 2px solid #877342;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .trend-button-list {
     display: flex;
-    justify-content: flex-start;
   }
 
   .trend-button-item {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
     margin-right: auto;
   }
 
@@ -188,6 +183,7 @@
 
 
   .main-parts {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -309,7 +305,7 @@
     border: none;
   
     background-color: #b59f5b;
-    background-image: url("/mq-diploma/images/search.svg");
+    background-image: url("/mq-diploma/svg/search.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
@@ -378,13 +374,145 @@
     vertical-align: top;
   }
 
+  .products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products-title {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .products-title::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    border-bottom-style: solid;
+    color: #e1d9bd;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .products-articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-article {
+    height: 260px;
+    border: 2px solid #d3c59d;
+  }
+
+  .product-article-title {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .product-description {
+    display: inline-block;
+    font-family: open-sans-r, sans-serif;
+  }
+
+  .price-and-shop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ .price {
+    width: calc(100%-180px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  } 
+
+  .old-price {
+    text-decoration: line-through;
+  }
+
+  .to-shop {
+    width: 140px;
+    height: 50px;
+    font-family: open-sans-r, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #b59f5b;
+    text-align: center;
+  }
+
+
+  .footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .socials-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .socials-list-item {
+    display: block;
+  }
+  
+  .socials-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+  }
+  
+  .socials-link-twitter {
+    background-image: url("/mq-diploma/svg/004-twitter.svg");
+  }
+  
+  .socials-link-pinterest {
+    background-image: url("/mq-diploma/svg/001-pinterest.svg");
+  }
+  
+  .socials-link-facebook-logo {
+    background-image: url("/mq-diploma/svg/002-facebook-logo.svg");
+  }
+  
+  .socials-link-instagram {
+    background-image: url("/mq-diploma/svg/005-instagram.svg");
+  }
+  
+  .socials-link-trumblr {
+    background-image: url("/mq-diploma/svg/003-tumblr.svg");
+  }
+  
+  .footer-link {
+    font-family: open-sans-b, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #999999;
+  }
 
 
 
   @media (min-width: 1200px) {
 
     .header {
-      width: 100%;
       max-width: 1660px;
       padding-top: 30px;
       padding-bottom: 135px;
@@ -422,11 +550,11 @@
     }
 
     .trends-articles {
-      margin-top: 35px;
+      margin-top: 30px;
     }
 
     .trend {
-      width: calc((100%-10px)/4);
+      width: calc(25%-2px);
       max-width: 414px;
       
       padding-left: 20px;
@@ -442,10 +570,6 @@
     .trend-article {
       padding: 35px 30px;
     }
-    
-    .trend-button-item {
-      font-size: 13px;
-    }
 
     .trend-button-link {
       font-size: 14px;
@@ -457,7 +581,6 @@
     }
 
     .main-parts {
-      width: 100%;
       max-width: 1200px;
       padding: 60px 15px;
     }
@@ -612,6 +735,65 @@
 
     .number {
       font-size: 11px;
+    }
+
+
+    .products {
+      max-width: 1200px;
+      padding: 0 20px 65px;
+    }
+
+    .products-title {
+      font-size: 20px;
+    }
+
+    .products-articles {
+      margin-top: 30px;
+    }
+
+    .product {
+      width: 340px;
+    }
+  
+    .product-picture {
+      padding: 0 22px;
+    }
+
+    .product-article {
+      margin-top: -30px;
+    }
+
+    .product-article-title {
+      padding: 55px 20px 0;
+      font-size: 20px;
+    }
+
+    .product-description {
+      padding: 0 20px;
+      font-size: 15px;
+    }
+
+    .old-price {
+      font-size: 14px;
+    }
+
+    .new-price {
+      font-size: 20px;
+    }
+
+   
+    .footer {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin-top: 10px;
+    }
+
+    .socials-list-item {
+      margin: 30px 15px;
+    }
+
+    .footer-write {
+      margin-top: 70px;
     }
 
   }
