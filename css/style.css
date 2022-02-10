@@ -500,7 +500,13 @@
   .socials-link-trumblr {
     background-image: url("/mq-diploma/svg/003-tumblr.svg");
   }
-  
+
+
+  .socials-list {
+    margin: 0 20px;
+    background-color: #f4f7f6;
+  }
+
   .footer-link {
     font-family: open-sans-b, sans-serif;
     font-size: 12px;
