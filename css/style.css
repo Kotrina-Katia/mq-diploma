@@ -112,7 +112,16 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    max-width: calc(25%-2px);
+    min-width: calc(25%-2px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    margin-left: 3px;
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -152,17 +161,26 @@
     display: flex;
     flex-direction: column;
     border: 2px solid #877342;
-    align-items: flex-start;
+  
+  }
+
+  .trend-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 
   .trend-button-list {
     display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 
   .trend-button-item {
-    list-style-type: none;
     display: flex;
+    justify-content: flex-start;
     margin-right: auto;
+    list-style-type: none;
   }
 
   .trend-button-link {
@@ -207,21 +225,31 @@
   .article-header {
     text-align: left;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+  }
   
   .button-list {
     display: flex;
-    font-family: open-sans-b, sans-serif;
-    text-transform: uppercase;
+    justify-content: flex-start;
   }
   
   .button-list-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
     list-style-type: none;
   }
   
   .button-link {
-    color: #b59f5b;
+    font-family: open-sans-b, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    color: #b59f5b;
+    margin-right: auto;
   }
   
   .article-title {
@@ -414,7 +442,7 @@
     border: 2px solid #d3c59d;
   }
 
-  .product-article-title {
+  .product-article-title>a {
     font-family: open-sans-b, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
@@ -424,6 +452,12 @@
   .product-description {
     display: inline-block;
     font-family: open-sans-r, sans-serif;
+    color: #000000;
+  }
+
+  .product-description>a {
+    text-decoration: none;
+    color: #cabb92;
   }
 
   .price-and-shop {
@@ -519,7 +553,7 @@
   @media (min-width: 1200px) {
 
     .header {
-      max-width: 1660px;
+      width: 100%;
       padding-top: 30px;
       padding-bottom: 135px;
       background-image: url("/mq-diploma/images/banner-bg.jpg");
@@ -545,9 +579,8 @@
       width: 730px;
     }
 
+
     .trends {
-      width: 100%;
-      max-width: 1660px;
       padding-top: 65px;
     }
 
@@ -560,9 +593,8 @@
     }
 
     .trend {
-      width: calc(25%-2px);
-      max-width: 414px;
-      
+      max-width: calc(25%-2px);
+      min-width: calc(25%-2px);
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 15px;
@@ -577,6 +609,10 @@
       padding: 35px 30px;
     }
 
+    .trend-button-item {
+      margin-right: 14px;
+    }
+
     .trend-button-link {
       font-size: 14px;
     }
@@ -586,14 +622,15 @@
       line-height: 1.2;
     }
 
+
     .main-parts {
-      max-width: 1200px;
+      width: 1200px;
       padding: 60px 15px;
     }
 
+
     .main {
-      width: calc(100%-375px);
-      max-width: 780px;
+      width: 780px;
     }
 
     .article {
@@ -605,8 +642,8 @@
     }
     
     .picture {
-    width: 381px;
-    margin-right: 24px;
+      width: 381px;
+      margin-right: 24px;
     }
 
     .text {
@@ -745,7 +782,7 @@
 
 
     .products {
-      max-width: 1200px;
+      width: 1200px;
       padding: 0 20px 65px;
     }
 
