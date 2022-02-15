@@ -232,7 +232,7 @@
   .data {
     font-family: open-sans-b, sans-serif;
     font-weight: bold;
-    color: #d4d4d4;
+    color: #888888;
   }
   
   .author {
@@ -443,27 +443,33 @@
   }
 
   .price-and-shop {
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family: open-sans-b, sans-serif;
+    font-weight: bold;
   }
 
- .price {
-    width: calc(100%-180px);
+  .price {
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
-    padding: 0 20px;
   } 
 
   .old-price {
+    height: 14px;
     text-decoration: line-through;
+  }
+
+  .new-price {
+    height: 20px;
   }
 
   .to-shop {
     width: 140px;
     height: 50px;
-    font-family: open-sans-r, sans-serif;
+    border-style: none;
+    font-family: open-sans-b, sans-serif;
+    font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     color: #ffffff;
@@ -784,45 +790,36 @@
     }
 
     .product-article {
-      width: 100%;
+      padding: 0 22px 22px;
       margin-top: -30px;
     }
 
     .product-article-title {
-      padding: 55px 20px 0;
+      padding: 55px 0 0;
       font-size: 20px;
     }
 
     .product-description {
-      padding: 0 20px;
+      padding: 5px 0;
       font-size: 15px;
     }
 
-    .price-and-shop {
-      padding-bottom: 25px;
-      padding-top: 25px;
-    }
-
     .price {
-      width: 100px;
+      width: 80px;
     }
 
     .old-price {
-      height: 14px;
-      flex-grow: 1;
       font-size: 14px;
+      height: 14px;
     }
 
     .new-price {
-      height: 20px;
-      flex-grow: 1;
       font-size: 20px;
     }
 
    
     .footer {
-      max-width: 1200px;
-      padding: 0 15px;
+      width: 1200px;
       margin-top: 10px;
     }
 
