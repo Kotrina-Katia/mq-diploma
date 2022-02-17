@@ -383,7 +383,6 @@
 
 
   .products {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -409,18 +408,22 @@
   }
 
   .products-articles {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
+
   }
 
   .product {
     display: flex;
     flex-direction: column;
+    align-self: stretch;
   }
 
   .product-article {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     border: 2px solid #d3c59d;
   }
 
@@ -468,12 +471,16 @@
     width: 140px;
     height: 50px;
     border-style: none;
+    background-color: #b59f5b;
+  }
+
+  .to-shop>a {
     font-family: open-sans-b, sans-serif;
     font-weight: bold;
     font-size: 15px;
+    text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #b59f5b;
     text-align: center;
   }
 
@@ -544,8 +551,7 @@
 
     .header {
       width: 100%;
-      padding-top: 30px;
-      padding-bottom: 135px;
+      padding: 30px 240px 135px;
       background-image: url("/mq-diploma/images/banner-bg.jpg");
     }
     
