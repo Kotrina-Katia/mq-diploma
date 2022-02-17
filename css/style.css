@@ -45,6 +45,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 0 15px;
   }
  
   .header-menu {
@@ -110,9 +112,6 @@
     display: flex;
     align-items: flex-end;
     
-
-    
-
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -550,14 +549,8 @@
   @media (min-width: 1200px) {
 
     .header {
-      width: 100%;
-      padding: 30px 240px 135px;
+      padding: 30px 230px 140px;
       background-image: url("/mq-diploma/images/banner-bg.jpg");
-    }
-    
-    .menu {
-      width: 100%;
-      padding: 0 15px;
     }
     
     .menu-link {
@@ -569,10 +562,10 @@
     }
     
     .welcome-title {
-      font-size: 44px;
+      font-size: 45px;
       line-height: 1.55;
-      margin-top: 105px;
-      width: 730px;
+      margin-top: 120px;
+      width: 720px;
     }
 
 
@@ -585,14 +578,14 @@
     }
 
     .trends-articles {
-      height: 270px;
       margin-top: 30px;
     }
 
     .trend {
-      width: calc(25% - 2px);
+      width: calc(25% - 3px);
+      height: 270px;
       padding: 0 20px 15px;
-      margin-left: 3px;
+      margin-left: 4px;
     }
 
     .trend:first-child {
@@ -600,7 +593,7 @@
     }
 
     .trend-article {
-      padding: 35px 30px;
+      padding: 35px;
     }
 
     .trend-button-item {
@@ -835,6 +828,206 @@
 
     .footer-write {
       margin-top: 70px;
+    }
+
+  }
+
+
+
+  @media (min-width: 641px) and (max-width: 1199pxpx) {
+
+    .header {
+      padding: 30px 230px 140px;
+      background-image: url("/mq-diploma/images/banner-bg-tablet.jpg");
+    }
+
+    .menu-link {
+      font-size: 13px;
+    }
+    
+    .menu-list-item {
+      margin-left: 35px;
+    }
+    
+    .welcome-title {
+      font-size: 45px;
+      line-height: 1.55;
+      margin-top: 120px;
+      width: 720px;
+    }
+
+
+    .trends {
+      padding-top: 65px;
+    }
+
+    .trends-title {
+      font-size: 20px;
+    }
+
+    .trends-articles {
+      margin-top: 30px;
+    }
+
+    .trend {
+      height: 340px;
+      padding: 0 20px 15px;
+      
+    }
+
+    .trend:first-child {
+      margin-left: 0;
+    }
+
+    .trend-article {
+      padding: 35px;
+    }
+
+    .trend-button-item {
+      margin-right: 14px;
+    }
+
+    .trend-button-link {
+      font-size: 14px;
+    }
+
+    .trend-article-title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+  }
+
+
+
+  @media (min-width: 641px) and (max-width: 1199pxpx) and (orientation: landscape) {
+
+    .trend {
+      width: calc(25% - 3px);
+      margin-left: 4px;
+    }
+
+    .trend:first-child {
+      margin-left: 0;
+    }
+
+  }
+
+
+
+
+  @media (min-width: 641px) and (max-width: 1199pxpx) and (orientation: portrait) {
+
+    .trend {
+      flex-wrap: wrap;
+      width: calc(50% - 2px);
+    }
+    
+    .trend:nth-child(n-3) {
+      margin-top: 4px;
+    }
+
+    .trend:nth-child(even) {
+      margin-left: 4px;
+    }
+
+  }
+
+
+
+  @media (max-width: 640px) {
+
+    .header {
+      padding: 30px 15px 200px;
+      background-image: url("/mq-diploma/images/banner-mobile.jpg");
+    }
+
+    .menu-link {
+      font-size: 13px;
+    }
+    
+    .menu-list-item {
+      margin-left: 35px;
+    }
+    
+    .welcome-title {
+      font-size: 26px;
+      line-height: 1.55;
+      margin-top: 40px;
+      width: 300px;
+    }
+
+
+    .trends {
+      padding-top: 44px;
+    }
+
+    .trends-title {
+      font-size: 16px;
+    }
+
+    .trends-articles {
+      height: 270px;
+      margin-top: 24px;
+    }
+
+    .trend {
+      padding: 0 15px 15px;
+      margin-bottom: 1px;
+      border-top: 1px solid  #d1cbc5;
+      border-bottom: 1pz solid  #d1cbc5;
+    }
+
+    .trend-article {
+      padding: 20px 30px;
+    }
+
+    .trend-button-item {
+      margin-right: 18px;
+    }
+
+    .trend-button-link {
+      font-size: 14px;
+    }
+
+    .trend-article-title {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+  }
+
+
+
+  @media (max-width: 640px) and (orientation: landscape) {
+
+    .trend {
+      flex-wrap: wrap;
+      width: calc(50% - 2px);
+    }
+
+    .trend:nth-child(n-3) {
+      margin-top: 1px;
+    }
+
+    .trend:nth-child(even) {
+      margin-left: 1px;
+    }
+
+  }
+
+
+
+  @media (max-width: 640px) and (orientation: portrait) {
+
+    .trend {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1px;
+    }
+
+    .trend:first-child {
+      margin-top: 0;
     }
 
   }
