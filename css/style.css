@@ -20,6 +20,10 @@
 
   .header  {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
     text-align: center;
     position: relative;
     background-repeat: no-repeat;
@@ -181,9 +185,6 @@
   .main-parts {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .main {
@@ -612,7 +613,10 @@
 
     .main-parts {
       width: 1200px;
-      padding: 60px 15px;
+      padding: 65px 15px;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
     }
 
 
@@ -673,6 +677,7 @@
       line-height: 1.5;
       margin-bottom: 10px;
     }
+
 
     .aside {
       width: 275px;
@@ -737,6 +742,7 @@
     .teg-list {
       margin-top: 25px;
     }
+
     .teg-list-item {
       padding: 4px 14px;
       margin: 0 9px 6px 0;
@@ -850,10 +856,10 @@
     }
     
     .welcome-title {
-      font-size: 45px;
+      font-size: 40px;
       line-height: 1.55;
-      margin-top: 120px;
-      width: 720px;
+      margin-top: 100px;
+      width: 600px;
     }
 
 
@@ -870,9 +876,8 @@
     }
 
     .trend {
-      height: 340px;
-      padding: 0 20px 15px;
-      
+      height: 250px;
+      margin-bottom: 3px;
     }
 
     .trend:first-child {
@@ -895,6 +900,72 @@
       font-size: 20px;
       line-height: 1.2;
     }
+
+
+    .main-parts {
+      width: 100%;
+      padding: 50px 35px;
+    }
+
+
+    .main {
+      width: calc(100%-445px);
+    }
+
+    .article {
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    .article:last-child {
+      margin-bottom: 0;
+    }
+    
+    .picture {
+      width: 381px;
+      margin-right: 24px;
+    }
+
+    .text {
+      margin-left: 6px;
+    }
+
+    .button-list {
+      margin-bottom: 6px;
+    }
+
+    .button-list-item {
+      margin-right: 16px;
+    }
+
+    .button-link {
+      font-size: 14px;
+    }
+
+    .article-title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .data-author {
+      margin-top: 25px;
+      margin-bottom: 45px;
+    }
+
+    .data {
+      font-size: 12px;
+    }
+
+    .author {
+      margin-left: 9px;
+      font-size: 12px;
+    }
+
+    .short-text {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    } 
 
   }
 
@@ -922,9 +993,9 @@
       flex-wrap: wrap;
       width: calc(50% - 2px);
     }
-    
+
     .trend:nth-child(n-3) {
-      margin-top: 4px;
+      margin-top: 3px;
     }
 
     .trend:nth-child(even) {
@@ -973,9 +1044,6 @@
 
     .trend {
       padding: 0 15px 15px;
-      margin-bottom: 1px;
-      border-top: 1px solid  #d1cbc5;
-      border-bottom: 1pz solid  #d1cbc5;
     }
 
     .trend-article {
@@ -995,6 +1063,73 @@
       line-height: 1.2;
     }
 
+
+    .main-parts {
+      width: 100%;
+      padding: 45px 15px;
+      flex-direction: column;
+    }
+
+
+    .main {
+      width: 100%;
+    }
+
+    .article {
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    .article:last-child {
+      margin-bottom: 0;
+    }
+    
+    .picture {
+      width: 381px;
+      margin-right: 24px;
+    }
+
+    .text {
+      margin-left: 6px;
+    }
+
+    .button-list {
+      margin-bottom: 6px;
+    }
+
+    .button-list-item {
+      margin-right: 16px;
+    }
+
+    .button-link {
+      font-size: 14px;
+    }
+
+    .article-title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .data-author {
+      margin-top: 25px;
+      margin-bottom: 45px;
+    }
+
+    .data {
+      font-size: 12px;
+    }
+
+    .author {
+      margin-left: 9px;
+      font-size: 12px;
+    }
+
+    .short-text {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    } 
+
   }
 
 
@@ -1007,11 +1142,11 @@
     }
 
     .trend:nth-child(n-3) {
-      margin-top: 1px;
+      margin-top: 3px;
     }
 
     .trend:nth-child(even) {
-      margin-left: 1px;
+      margin-left: 4px;
     }
 
   }
@@ -1023,7 +1158,7 @@
     .trend {
       flex-direction: column;
       width: 100%;
-      margin-top: 1px;
+      margin-top: 3px;
     }
 
     .trend:first-child {
