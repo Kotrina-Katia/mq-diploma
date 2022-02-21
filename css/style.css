@@ -115,8 +115,6 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    flex-grow: 1;
-    flex-shrink: 1;
     
     background-repeat: no-repeat;
     background-position: center center;
@@ -154,6 +152,7 @@
   }
 
   .trend-article {
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 2px solid #877342;
@@ -882,7 +881,6 @@
     }
 
     .trends-articles {
-      flex-wrap: wrap;
       margin-top: 30px;
     }
 
@@ -1040,7 +1038,7 @@
 
 
 
-  @media (min-width: 641px) and (max-width: 1199pxpx) and (orientation: landscape) {
+  @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
 
     .trend {
       width: calc(25% - 3px);
@@ -1056,10 +1054,13 @@
 
 
 
-  @media (min-width: 641px) and (max-width: 1199pxpx) and (orientation: portrait) {
+  @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+
+    .trends-articles {
+      flex-wrap: wrap;
+    }
 
     .trend {
-      flex-wrap: wrap;
       width: calc(50% - 2px);
     }
 
@@ -1084,7 +1085,6 @@
 
     .menu {
       flex-direction: column;
-      align-items: flex-end;
     }
 
     .header-logo {
@@ -1095,6 +1095,7 @@
 
     .header-menu {
       order: -1;
+      align-self: flex-end;
     }
 
     .menu-lists {
@@ -1118,11 +1119,11 @@
     }
 
     .trends-articles {
-      height: 270px;
       margin-top: 24px;
     }
 
     .trend {
+      height: 210px;
       padding: 0 15px 15px;
     }
 
@@ -1273,8 +1274,11 @@
 
   @media (max-width: 640px) and (orientation: landscape) {
 
-    .trend {
+    .trends-articles {
       flex-wrap: wrap;
+    }
+
+    .trend {
       width: calc(50% - 2px);
     }
 
@@ -1292,8 +1296,11 @@
 
   @media (max-width: 640px) and (orientation: portrait) {
 
-    .trend {
+    .trends-articles {
       flex-direction: column;
+    }
+
+    .trend {
       width: 100%;
       margin-top: 3px;
     }
