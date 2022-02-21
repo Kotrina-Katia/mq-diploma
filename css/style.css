@@ -57,19 +57,19 @@
     display: flex;
   }
 
-  .menu-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: open-sans-r, sans-serif;
-    text-transform: uppercase;
+  .menu-lists {
+    display: flex;
   }
 
   .menu-list-item {
     list-style-type: none;
   }
 
-  .menu-lists {
-    display: flex;
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: open-sans-r, sans-serif;
+    text-transform: uppercase;
   }
 
   .welcome-title {
@@ -554,6 +554,10 @@
       background-image: url("/mq-diploma/images/banner-bg.jpg");
     }
     
+    .menu-button {
+      display: none;
+    }
+
     .menu-link {
       font-size: 13px;
     }
@@ -847,12 +851,8 @@
       background-image: url("/mq-diploma/images/banner-bg-tablet.jpg");
     }
 
-    .menu-link {
-      font-size: 13px;
-    }
-    
-    .menu-list-item {
-      margin-left: 35px;
+    .menu-lists {
+      display: none;
     }
     
     .welcome-title {
@@ -922,7 +922,7 @@
     }
     
     .picture {
-      width: 381px;
+      width: 100%;
       margin-right: 24px;
     }
 
@@ -1013,12 +1013,8 @@
       background-image: url("/mq-diploma/images/banner-mobile.jpg");
     }
 
-    .menu-link {
-      font-size: 13px;
-    }
-    
-    .menu-list-item {
-      margin-left: 35px;
+    .menu-lists {
+      display: none;
     }
     
     .welcome-title {
@@ -1085,7 +1081,7 @@
     }
     
     .picture {
-      width: 381px;
+      width: 100%;
       margin-right: 24px;
     }
 
