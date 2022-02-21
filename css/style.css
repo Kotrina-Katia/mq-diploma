@@ -6,13 +6,13 @@
   
   @font-face {
     font-family: open-sans-r;
-    src: url("fonts/OpenSans-Regular.ttf");
+    src: url("/mq-diploma/fonts/OpenSans-Regular.ttf");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: open-sans-b;
-    src: url("fonts/OpenSans-Bold.ttf");
+    src: url("/mq-diploma/fonts/OpenSans-Bold.ttf");
     font-weight: 400;
     font-style: bold;
   }
