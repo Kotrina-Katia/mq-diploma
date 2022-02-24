@@ -349,7 +349,7 @@
   
   .teg-list-item {
     list-style-type: none;
-    border: 1px solid #eeeeee;
+    border: 2px solid #eeeeee;
   }
   
   .teg-link {
@@ -410,9 +410,6 @@
 
   .products-articles {
     display: flex;
-    justify-content: space-between;
-
-
   }
 
   .product {
@@ -478,7 +475,7 @@
   .to-shop>a {
     font-family: open-sans-b, sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -743,10 +740,6 @@
       height: 50px;
       font-size: 14px;
     }
-
-    .teg-section {
-      margin-left: 5px;
-    }
     
     .teg-list {
       margin-top: 25px;
@@ -792,13 +785,14 @@
     }
 
     .products-articles {
+      justify-content: space-between;
       margin-top: 30px;
     }
 
     .product {
       width: 340px;
     }
-  
+
     .product-picture {
       padding: 0 22px;
     }
@@ -819,7 +813,7 @@
     }
 
     .price {
-      width: 80px;
+      width: 100%;
     }
 
     .old-price {
@@ -912,6 +906,7 @@
 
 
     .main-parts {
+      justify-content: space-between;
       width: 100%;
       padding: 50px 35px;
     }
@@ -924,16 +919,24 @@
 
     .article {
       flex-direction: column;
-      margin-bottom: 60px;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #eeeeee;
     }
 
     .article:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
+    }
+    
+    .article:first-child {
+      margin-top: 0;
     }
     
     .picture {
       width: 100%;
       margin-right: 24px;
+      margin-bottom: 20px;
     }
 
     .text {
@@ -953,12 +956,12 @@
     }
 
     .article-title {
-      font-size: 20px;
+      font-size: 17px;
       line-height: 1.2;
     }
 
     .data-author {
-      margin-top: 25px;
+      margin-top: 35px;
       margin-bottom: 45px;
     }
 
@@ -996,7 +999,7 @@
     
     .aside-picture {
       width: 73px;
-      margin-right: 15px;
+      margin-right: 18px;
     }
 
     .aside-data {
@@ -1018,20 +1021,125 @@
     }
 
     .email {
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
 
     .email-field {
       padding: 14px 20px;
-      margin-top: 20px;
+      margin-top: 25px;
       margin-bottom: 20px;
       font-size: 14px;
     }
 
     .email-button {
-      width: 270px;
+      width: 100%;
       height: 50px;
       font-size: 14px;
+    }
+    
+    .teg-list {
+      margin-top: 25px;
+    }
+
+    .teg-list-item {
+      padding: 4px 14px;
+      margin: 0 9px 6px 0;
+    }
+    
+    .theme-list {
+      margin-top: 10px;
+    }
+    
+    .teg-link {
+      font-size: 12px;
+    }
+
+    .tegs {
+      margin-bottom: 54px;
+    }
+
+    .theme-list-item {
+      padding: 12px 0;
+    }
+
+    .theme-link {
+      font-size: 14px;
+    }
+
+    .number {
+      font-size: 11px;
+    }
+
+
+    .products {
+      width: 100%;
+      padding: 0 35px 50px;
+    }
+
+    .products-title {
+      font-size: 18px;
+    }
+
+    .products-articles {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .product {
+      width: calc(50%-20px);
+      margin-top: 20px;
+    }
+  
+    .product:nth-child(odd) {
+      margin-right: 20px;
+    }
+
+    .product-picture {
+      width: 100%;
+      padding: 0 22px;
+    }
+
+    .product-article {
+      padding: 0 22px 22px;
+      margin-top: -30px;
+    }
+
+    .product-article-title {
+      padding: 55px 0 0;
+      font-size: 17px;
+    }
+
+    .product-description {
+      padding: 5px 0;
+      font-size: 15px;
+    }
+
+    .price {
+      width: 100%;
+    }
+
+    .old-price {
+      font-size: 14px;
+      height: 14px;
+    }
+
+    .new-price {
+      font-size: 20px;
+    }
+
+   
+    .footer {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .socials-list-item {
+      margin: 30px 15px;
+    }
+
+    .footer-write {
+      margin-top: 70px;
     }
 
   }
@@ -1158,16 +1266,24 @@
 
     .article {
       flex-direction: column;
-      margin-bottom: 60px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #eeeeee;
     }
 
     .article:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
     }
     
+    .article:first-child {
+      margin-top: 0;
+    }
+
     .picture {
       width: 100%;
       margin-right: 24px;
+      margin-bottom: 15px;
     }
 
     .text {
@@ -1192,8 +1308,8 @@
     }
 
     .data-author {
-      margin-top: 25px;
-      margin-bottom: 45px;
+      margin-top: 40px;
+      margin-bottom: 35px;
     }
 
     .data {
@@ -1266,6 +1382,104 @@
       width: 270px;
       height: 50px;
       font-size: 14px;
+    } 
+    
+    .teg-list {
+      margin-top: 25px;
+    }
+
+    .teg-list-item {
+      padding: 4px 14px;
+      margin: 0 9px 6px 0;
+    }
+    
+    .theme-list {
+      margin-top: 10px;
+    }
+    
+    .teg-link {
+      font-size: 12px;
+    }
+
+    .tegs {
+      margin-bottom: 54px;
+    }
+
+    .theme-list-item {
+      padding: 12px 0;
+    }
+
+    .theme-link {
+      font-size: 14px;
+    }
+
+    .number {
+      font-size: 11px;
+    }
+
+
+    .products {
+      width: 100%;
+      padding: 0 35px 50px;
+    }
+
+    .products-title {
+      font-size: 20px;
+    }
+
+    .products-articles {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .product {
+      width: 340px;
+    }
+  
+    .product-picture {
+      padding: 0 22px;
+    }
+
+    .product-article {
+      padding: 0 22px 22px;
+      margin-top: -30px;
+    }
+
+    .product-article-title {
+      padding: 55px 0 0;
+      font-size: 20px;
+    }
+
+    .product-description {
+      padding: 5px 0;
+      font-size: 15px;
+    }
+
+    .price {
+      width: 80px;
+    }
+
+    .old-price {
+      font-size: 14px;
+      height: 14px;
+    }
+
+    .new-price {
+      font-size: 20px;
+    }
+
+   
+    .footer {
+      width: 1200px;
+      margin-top: 10px;
+    }
+
+    .socials-list-item {
+      margin: 30px 15px;
+    }
+
+    .footer-write {
+      margin-top: 70px;
     }
 
   }
@@ -1290,6 +1504,12 @@
       margin-left: 4px;
     }
 
+
+    .products-articles {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
   }
 
 
@@ -1307,6 +1527,11 @@
 
     .trend:first-child {
       margin-top: 0;
+    }
+
+
+    .products-articles {
+      flex-direction: column;
     }
 
   }
