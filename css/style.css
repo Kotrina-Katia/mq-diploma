@@ -908,7 +908,7 @@
       font-size: 40px;
       line-height: 1.55;
       margin-top: 100px;
-      width: 600px;
+      flex-basis: 600px;
     }
 
 
@@ -1140,7 +1140,6 @@
   
     .product:nth-child(odd) {
       margin-right: auto;
-
     }
 
     .product-picture {
@@ -1265,7 +1264,7 @@
       font-size: 26px;
       line-height: 1.55;
       margin-top: 40px;
-      width: 300px;
+      flex-basis: 300px;
     }
 
 
@@ -1381,7 +1380,7 @@
 
 
     .aside {
-      width: 275px;
+      width: 100%;
     }
 
     .aside-title {
@@ -1415,15 +1414,19 @@
     }
 
     .search-field {
+      width: calc(100% - 50px);
       padding: 14px 20px;
       font-size: 14px;
     }
 
     .email {
+      flex-direction: column;
       margin-bottom: 55px;
     }
 
     .email-field {
+      width: 100%;
+      height: 50px;
       padding: 14px 20px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -1431,7 +1434,7 @@
     }
 
     .email-button {
-      width: 270px;
+      width: 100%;
       height: 50px;
       font-size: 14px;
     } 
