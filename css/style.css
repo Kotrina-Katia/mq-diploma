@@ -1485,11 +1485,11 @@
     }
 
     .product {
-      width: 340px;
+      width: 100%;
     }
   
     .product-picture {
-      padding: 0 22px;
+      padding: 26px 26px 0;
     }
 
     .product-article {
