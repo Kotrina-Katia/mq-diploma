@@ -641,19 +641,39 @@
   .popup-field, .popup-textarea {
     width: 100%;
     padding: 18px;
-    background-color: #f4f7f6;
     border: none;
+    background-color: #f4f7f6;
 
     font-family: open-sans-r, sans-serif;
     font-size: 13px;
     color: #a2a4a3;
   }
 
-  .popup-field {
+  .popup-textarea {
+    height: 130px;
+  }
+
+  .popup-field::before {
     background-image: url("/mq-diplom/svg/form-arrows.svg");
+  }
+
+  .popup-radio-text::before {
+    background-image: url("/mq-diplom/svg/form-empty-circle.svg");
+  }
+
+  .popup-radio-text::before, .popup-field::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    color: #b59f5b;
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto;
+    background-position: center center;
+    background-size: 20px;
   }
 
   .popup-radio {
@@ -669,22 +689,6 @@
 
   .popup-radio-group:nth-of-type(n + 1) {
     margin-left: 15px;
-  }
-
-
-  .popup-radio-text::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-
-    background-image: url("/mq-diplom/svg/form-empty-circle.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px;
   }
 
   .popup-button {
