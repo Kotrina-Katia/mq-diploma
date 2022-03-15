@@ -594,6 +594,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
+
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
@@ -638,7 +639,24 @@
     margin: 40px 0 15px;
   }
 
-  .popup-field, .popup-textarea {
+  .popup-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    display: block;
+    box-sizing: border-box;
+    height: 50px;
+
+    background-image: url("/mq-diploma/svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+
+  .popup-textarea {
+    height: 130px;
+  }
+
+  .popup-select, .popup-textarea {
     width: 100%;
     padding: 18px;
     border: none;
@@ -649,29 +667,14 @@
     color: #a2a4a3;
   }
 
-  .popup-textarea {
-    height: 130px;
-  }
-
-  .popup-field {
-    width: calc(100% - 30px);
-  }
-
-  .popup-field-group::after {
-    background-image: url("/mq-diploma/svg/form-arrows.svg");
-  }
-
   .popup-radio-group::before {
-    background-image: url("/mq-diploma/svg/form-empty-circle.svg");
-  }
-
-  .popup-radio-group::before, .popup-field-group::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
     text-align: center;
 
     color: #b59f5b;
+    background-image: url("/mq-diploma/svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
