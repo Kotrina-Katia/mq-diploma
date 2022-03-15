@@ -653,7 +653,11 @@
     height: 130px;
   }
 
-  .popup-field-group::before {
+  .popup-field {
+    width: calc(100% - 30px);
+  }
+
+  .popup-field-group::after {
     background-image: url("/mq-diploma/svg/form-arrows.svg");
   }
 
@@ -661,19 +665,27 @@
     background-image: url("/mq-diploma/svg/form-empty-circle.svg");
   }
 
-  .popup-radio-group::before, .popup-field-group::before {
+  .popup-radio-group::before, .popup-field-group::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
-
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    text-align: center;
 
     color: #b59f5b;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
+  }
+
+  .popup-radio-group::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .popup-field-group::after {
+    width: 30px;
+  
   }
 
   .popup-radio, .popup-textarea {
