@@ -653,7 +653,7 @@
     height: 130px;
   }
 
-  .popup-field-group::after {
+  .popup-field-group::before {
     background-image: url("/mq-diploma/svg/form-arrows.svg");
   }
 
@@ -661,7 +661,7 @@
     background-image: url("/mq-diploma/svg/form-empty-circle.svg");
   }
 
-  .popup-radio-group::before, .popup-field-group::after {
+  .popup-radio-group::before, .popup-field-group::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -676,7 +676,7 @@
     background-size: 20px;
   }
 
-  .popup-radio {
+  .popup-radio, .popup-textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
   }
