@@ -657,11 +657,11 @@
     background-image: url("/mq-diploma/svg/form-arrows.svg");
   }
 
-  .popup-radio-group::after {
+  .popup-radio-group::before {
     background-image: url("/mq-diploma/svg/form-empty-circle.svg");
   }
 
-  .popup-radio-group::after, .popup-field-group::after {
+  .popup-radio-group::before, .popup-field-group::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
