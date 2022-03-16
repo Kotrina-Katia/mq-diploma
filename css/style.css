@@ -653,10 +653,6 @@
     background-position: right 10px center;
   }
 
-  .popup-textarea {
-    height: 130px;
-  }
-
   .popup-select, .popup-textarea {
     width: 100%;
     padding: 18px;
@@ -668,26 +664,8 @@
     color: #a2a4a3;
   }
 
-  .popup-radio-group::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-
-    color: #b59f5b;
-    background-image: url("/mq-diploma/svg/form-empty-circle.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px;
-  }
-
-  .popup-radio, .popup-textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  .popup-textarea {
+    height: 130px;
   }
 
   .popup-radio-group {
@@ -698,6 +676,42 @@
 
   .popup-radio-group:nth-of-type(n + 1) {
     margin-right: 15px;
+  }
+
+  .popup-radio {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;;
+  }
+
+  .popup-radio-text::before, .popup-radio:checked ~ popup-radio-text::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+    color: #b59f5b;
+    background-image: url("/mq-diploma/svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+  }
+
+  .popup-radio-text::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .popup-radio:checked ~ popup-radio-text::before {
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+    background-color: #b59f5b;
   }
 
   .popup-button {
