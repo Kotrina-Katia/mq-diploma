@@ -648,6 +648,7 @@
     height: 50px;
 
     background-image: url("/mq-diploma/svg/form-arrows.svg");
+    background-size: 10px;
     background-repeat: no-repeat;
     background-position: right 10px center;
   }
@@ -673,22 +674,15 @@
     vertical-align: middle;
     text-align: center;
 
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
     color: #b59f5b;
     background-image: url("/mq-diploma/svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
-  }
-
-  .popup-radio-group::before {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-
-  .popup-field-group::after {
-    width: 30px;
-  
   }
 
   .popup-radio, .popup-textarea {
