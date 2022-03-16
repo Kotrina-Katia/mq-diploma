@@ -603,6 +603,7 @@
   .popup {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     max-width: 390px;
     padding: 55px 35px;
@@ -612,6 +613,7 @@
   }
 
   .popup-button-close {
+    display: block;
     position: absolute;
     top: -30px;
     right: 0;
