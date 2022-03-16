@@ -683,6 +683,7 @@
 
   .popup-radio-group {
     display: inline-block;
+    position: relative;
     font-family: open-sans-r, sans-serif;
     font-size: 13px;
   }
