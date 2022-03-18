@@ -518,12 +518,12 @@
     </body>
 
 
-    <div class="popup-wrapper">
+    <div class="popup-wrapper visually-hidden">
         <section class="popup">
 
-            <div class="popup-button-close">
+            <button class="popup-button-close">
                 <span class="visually-hidden">закрыть</span>
-            </div>
+            </button>
 
             <h3 class="popup-title">ваш фидбек</h3>
             <form class="popup-form">
@@ -556,7 +556,9 @@
                 
                 <label class="popup-textarea-group">
                     <span class="popup-form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                    <textarea class="popup-textarea" placeholder="Может, больше рецептов?" required></textarea>
+                    <textarea class="popup-textarea" placeholder="Может, больше рецептов?" required>
+                        <span class="visually-hidden">Может, больше рецептов?</span>
+                    </textarea>
                 </label>
 
                 <button class="popup-button">отправить</button>

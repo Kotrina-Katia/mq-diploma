@@ -6,13 +6,13 @@
   
   @font-face {
     font-family: open-sans-r;
-    src: url("/mq-diploma/fonts/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans-Regular.ttf");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: open-sans-b;
-    src: url("/mq-diploma/fonts/OpenSans-Bold.ttf");
+    src: url("../fonts/OpenSans-Bold.ttf");
     font-weight: 400;
     font-style: bold;
   }
@@ -29,6 +29,7 @@
     background-position: center center;
     background-size: cover;
     background-color: #000000;
+    z-index: 1;
   }
 
   .header::after {
@@ -164,6 +165,7 @@
     background-position: center center;
     background-size: cover;
     background-color: #000000;
+    z-index: 1;
   }
 
   .trend::after {
@@ -179,19 +181,19 @@
   }
 
   .trend-first {
-    background-image: url("/mq-diploma/images/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
   }
 
   .trend-second {
-    background-image: url("/mq-diploma/images/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
   }
 
   .trend-third {
-    background-image: url("/mq-diploma/images/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
   }
 
   .trend-fourth {
-    background-image: url("/mq-diploma/images/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
   }
 
   .trend-article {
@@ -350,7 +352,7 @@
     border: none;
   
     background-color: #b59f5b;
-    background-image: url("/mq-diploma/svg/search.svg");
+    background-image: url("../svg/search.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
@@ -555,23 +557,23 @@
   }
   
   .socials-link-twitter {
-    background-image: url("/mq-diploma/svg/004-twitter.svg");
+    background-image: url("../svg/004-twitter.svg");
   }
   
   .socials-link-pinterest {
-    background-image: url("/mq-diploma/svg/001-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
   }
   
   .socials-link-facebook-logo {
-    background-image: url("/mq-diploma/svg/002-facebook-logo.svg");
+    background-image: url("../svg/002-facebook-logo.svg");
   }
   
   .socials-link-instagram {
-    background-image: url("/mq-diploma/svg/005-instagram.svg");
+    background-image: url("../svg/005-instagram.svg");
   }
   
   .socials-link-trumblr {
-    background-image: url("/mq-diploma/svg/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
   }
 
   .socials-list {
@@ -615,13 +617,14 @@
   .popup-button-close {
     display: block;
     position: absolute;
+   
     width: 20px;
     height: 20px;
     border: none;
     top: -30px;
     right: 0;
 
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
     background-image: url("../svg/form-x.svg");
     background-repeat: no-repeat;
     background-size: 20px;
@@ -660,17 +663,18 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    display: block;
-    box-sizing: border-box;
     height: 50px;
 
-    background-image: url("/mq-diploma/svg/form-arrows.svg");
+    background-image: url("../svg/form-arrows.svg");
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: right 10px center;
   }
 
   .popup-select, .popup-textarea {
+    display: inline-block;
+    box-sizing: border-box;
+
     width: 100%;
     padding: 18px;
     border: none;
@@ -683,6 +687,11 @@
 
   .popup-textarea {
     height: 130px;
+  }
+
+  .popup-select:focus, .popup-textarea:focus, .popup-radio:focus ~ .popup-radio-text::before {
+    outline: 2px solid #b59f5b;
+    outline-offset: 2px;
   }
 
   .popup-radio-group {
@@ -703,33 +712,20 @@
     width: 1px;;
   }
 
-  .popup-radio-text::before, .popup-radio:checked ~ popup-radio-text::before {
+  .popup-radio-text::before {
     content: "";
     display: inline-block;
-    vertical-align: middle;
-    text-align: center;
 
-    color: #b59f5b;
-    background-image: url("/mq-diploma/svg/form-empty-circle.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px;
-  }
-
-  .popup-radio-text::before {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-  }
+    vertical-align: middle;
+    text-align: center;
 
-  .popup-radio:checked ~ popup-radio-text::before {
-    position: absolute;
-
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-
-    background-color: #b59f5b;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
   }
 
   .popup-button {
@@ -751,7 +747,7 @@
 
     .header {
       padding: 30px 230px 140px;
-      background-image: url("/mq-diploma/images/banner-bg.jpg");
+      background-image: url("../images/banner-bg.jpg");
     }
 
     .header-logo {
@@ -1048,7 +1044,7 @@
 
     .header {
       padding: 50px 35px 125px;
-      background-image: url("/mq-diploma/images/banner-bg-tablet.jpg");
+      background-image: url("../images/banner-bg-tablet.jpg");
     }
 
     .header-logo {
@@ -1397,7 +1393,7 @@
 
     .header {
       padding: 30px 15px 220px;
-      background-image: url("/mq-diploma/images/banner-mobile.jpg");
+      background-image: url("../images/banner-mobile.jpg");
     }
 
     .menu {
