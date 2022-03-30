@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex: auto;
+    
     text-align: center;
     position: relative;
     background-repeat: no-repeat;
@@ -689,7 +689,7 @@
     height: 130px;
   }
 
-  .popup-select:focus, .popup-textarea:focus, .popup-radio:focus ~ .popup-radio-text::before {
+  .popup-select:focus, .popup-textarea:focus {
     outline: 2px solid #b59f5b;
     outline-offset: 2px;
   }
@@ -713,6 +713,14 @@
   }
 
   .popup-radio-text::before {
+    background-image: url("../svg/form-empty-circle.svg");
+  }
+
+  .popup-radio:checked ~ .popup-radio-text::before {
+    background-image: url("../svg/form-circle.svg");
+  }
+
+  .popup-radio-text::before, .popup-radio:checked ~ .popup-radio-text::before {
     content: "";
     display: inline-block;
 
@@ -722,7 +730,6 @@
     vertical-align: middle;
     text-align: center;
 
-    background-image: url("../svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -746,8 +753,17 @@
   @media (min-width: 1200px) {
 
     .header {
-      padding: 30px 230px 140px;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom:  140px;
+      
       background-image: url("../images/banner-bg.jpg");
+    }
+
+    .menu {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .header-logo {
@@ -788,8 +804,8 @@
 
     .trend {
       width: calc(25% - 3px);
-      height: 270px;
-      padding: 0 20px 15px;
+      min-height: 270px;
+      padding: 15px 20px;
       margin-left: 4px;
     }
 
@@ -974,7 +990,7 @@
 
     .products {
       width: 1200px;
-      padding: 0 20px 65px;
+      padding: 0 15px 65px;
     }
 
     .products-title {
@@ -1076,8 +1092,8 @@
     }
 
     .trend {
-      height: 250px;
-      padding: 0 20px 15px;
+      min-height: 250px;
+      padding: 15px 20px;
       margin-bottom: 3px;
     }
 
@@ -1402,6 +1418,7 @@
 
     .logo-link {
       width: 100%;
+      max-width: 270px;
       margin-top: 175px;
       margin-bottom: 45px;
     }
@@ -1441,8 +1458,8 @@
     }
 
     .trend {
-      height: 230px;
-      padding: 0 15px 15px;
+      min-height: 250px;
+      padding: 15px 15px;
     }
 
     .trend-article {
@@ -1632,7 +1649,7 @@
 
     .products {
       width: 100%;
-      padding: 0 35px 50px;
+      padding: 0 15px 50px;
     }
 
     .products-title {
